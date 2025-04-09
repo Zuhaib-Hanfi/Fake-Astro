@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Astro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Fake Astro</h1>
+    </div>
+    <form>
+        <div class="container">
+            <h1>Welcome</h1>
+            <p>No one can know your future except Allah (SWT).</p>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <div style="display: flex; gap: 10px;">
+                    <input type="number" id="day" placeholder="Day" min="1" max="31" style="flex: 1;" required>
+                    <input type="number" id="month" placeholder="Month" min="1" max="12" style="flex: 1;" required>
+                    <input type="number" id="year" placeholder="Year" min="1900" max="2025" style="flex: 2;" required>
+                </div>
+            </div>
+            <button type="submit" id="submit">Know Your Future</button>
+            <div id="result"></div>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
